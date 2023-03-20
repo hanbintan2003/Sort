@@ -64,11 +64,34 @@ FILE(GLOB_RECURSE SOURCE_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}   "${INCLUDE
 
 ADD_EXECUTABLE(main
     main.cpp
-    ${SOURCE_FILES}
-)
+    ${SOURCE_FILES})
+
+ADD_EXECUTABLE(BubbleSort
+        Sort/BubbleSort.cpp
+        ${SOURCE_FILES} )
+ADD_EXECUTABLE(SelectionSort
+        Sort/SelectionSort.cpp
+        ${SOURCE_FILES})
+ADD_EXECUTABLE(InsertionSort
+        Sort/InsertionSort.cpp
+        ${SOURCE_FILES})
+ADD_EXECUTABLE(ShellSort
+        Sort/ShellSort.cpp
+        ${SOURCE_FILES})
+ADD_EXECUTABLE(MergeSort
+        Sort/MergeSort.cpp
+        ${SOURCE_FILES})
+ADD_EXECUTABLE(QuickSort
+        Sort/QuckSort.cpp
+        ${SOURCE_FILES})
+
+TARGET_LINK_LIBRARIES(BubbleSort sfml-graphics sfml-window sfml-system)
+TARGET_LINK_LIBRARIES(SelectionSort sfml-graphics sfml-window sfml-system)
+TARGET_LINK_LIBRARIES(InsertionSort sfml-graphics sfml-window sfml-system)
+TARGET_LINK_LIBRARIES(ShellSort sfml-graphics sfml-window sfml-system)
+TARGET_LINK_LIBRARIES(MergeSort sfml-graphics sfml-window sfml-system)
+TARGET_LINK_LIBRARIES(QuickSort sfml-graphics sfml-window sfml-system)
 
 
-TARGET_LINK_LIBRARIES(main gtest)
-TARGET_LINK_LIBRARIES(main sfml-graphics sfml-window sfml-system)
 ## copy resources file to build
 file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
