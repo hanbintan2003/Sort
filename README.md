@@ -1,25 +1,32 @@
 
-# Project Name
-Project Description goes here
+# Sort Visualizer
+A SFML based sorting visualizer
 
-* operation 1
-* operation 2
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Quick Sort
+* Shell Sort
 
 
 ## Demo
-use this to generate image link: https://postimages.org/
-* Demo 1
-link goes here
-* Tie
-link goes here
+* Random Data
+  <br>
+  ![gamePlay.png](./image/beforeSort.png)
+* Sorting
+  <br>
+  ![gamePlay.png](./image/sorting.png)
+* Done
+  <br>
+  ![gamePlay.png](./image/afterSort.png)
 
 
 ## Design
 change the repo name:
-Can be found in https://github.com/Serenity0204/CPP_TEMPLATE/blob/master/design.txt
+Can be found in https://github.com/hanbintan2003/Sort/blob/main/design.txt
 
 
 ## Features
 
-- feature 1
-- feature 2
+- Space Button to play or pause
+- r Button to reset
