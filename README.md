@@ -12,13 +12,13 @@ A SFML based sorting visualizer
 ## Demo
 * Random Data
   <br>
-  ![gamePlay.png](./image/beforeSort.png)
+  ![gamePlay.png](./image/beforeSort.PNG)
 * Sorting
   <br>
-  ![gamePlay.png](./image/sorting.png)
+  ![gamePlay.png](./image/sorting.PNG)
 * Done
   <br>
-  ![gamePlay.png](./image/afterSort.png)
+  ![gamePlay.png](./image/afterSort.PNG)
 
 
 ## Design
